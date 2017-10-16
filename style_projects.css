@@ -1,0 +1,123 @@
+.title {
+	width: 100%;
+	color: var(--hf-fontcolor);
+	text-align: center;
+}
+
+.title h1 {
+	font-family: 'Rubik', sans-serif;
+	font-size: 70px;
+	padding: 150px 10px 20px 10px;
+}
+
+.title h2 {
+	font-weight: 300;
+	padding: 10px 0;
+	width: 60%;
+	margin: 0 auto;
+}
+
+.container {
+	display: block;
+	margin: auto;
+	width: 100%;
+	height: auto;
+	padding-top: 40px;
+	text-align: center;
+}
+
+.wrapper {
+		padding: 30px 0;
+    vertical-align:middle;
+    display:inline-block;
+}
+
+.gallery h3 {
+	text-align: center;
+	padding: 10px;
+	border: 1px solid #FFF;
+	color: #FFF;
+	width: 60%;
+	font-size: 200%;
+	font-weight: 400;
+	overflow: hidden;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+	margin: 80px auto;
+}
+
+.skillContainer {
+	width: 60%;
+	padding-bottom: 100px;
+	margin: 0 auto;
+}
+
+.skill {
+	display: inline-block;
+	border: 1px solid #FFF;
+	color: #FFF;
+	padding: 7px 14px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px;
+	flex-grow: 1;
+	border-radius: 20px;
+}
+
+.gallery {
+	width: 100%;
+	height: auto;
+	display: block;
+	background-color: #666;
+	background-blend-mode: multiply;
+	background-attachment: fixed;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	clip-path: polygon(100% 0, 100% 95%, 52% 95%, 50% 99%, 48% 95%, 0 95%, 0 0);
+	z-index: -1;
+}
+
+/*.gallery:hover {
+	background-color: #333;
+}*/
+
+.g1 {	background-image: url("./images/Projects/Pic1.gif");}
+.g2 { background-image: url("./images/Projects/Pic2.gif");}
+.g3 { background-image: url("./images/Projects/Pic3.jpg");}
+.g4 { background-image: url("./images/Projects/Pic4.jpg");}
+.g5 { background-image: url("./images/Projects/Pic5.gif");}
+.g6 { background-image: url("./images/Projects/Pic6.jpg");}
+.end{ background-image: url("./images/gif1.gif"); padding: 400px 0; clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);}
+
+.desc {
+	font-weight: 200;
+	font-size: 13px;
+	line-height: 300%;
+	padding: 20px 0 50px 0;
+	margin: 0 auto;
+	width: 60%;
+	text-align: center;
+	color: var(--hf-fontcolor);
+}
+
+@media only screen and (max-width: 700px)  {
+	.gallery {
+		clip-path: polygon(100% 0, 100% 95%, 56% 95%, 50% 100%, 44% 95%, 0 95%, 0 0);
+	}
+	.gallery h3 {
+		font-size: 150%;
+		width: 80%;
+	}
+	.desc {
+		width: 90%;
+	}
+	.skillContainer {
+		width: 100%;
+	}
+	.end {
+		clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+	}
+}

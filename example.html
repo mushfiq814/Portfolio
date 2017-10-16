@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <link rel="stylesheet" href="example.css">
+</head>
+<body>
+  <div class="container">
+    <button class="left" onclick="plusDivs(-1)">&#10094;</button>
+    <div class="square s1"><p>Caption 1</p></div>
+    <div class="square s2"><p>Caption 2</p></div>
+    <div class="square s3"><p>Caption 3</p></div>
+    <div class="square s4"><p>Caption 4</p></div>
+    <div class="square s5"><p>Caption 5</p></div>
+    <button class="right" onclick="plusDivs(1)">&#10095;</button>
+  </div>
+
+  <script>
+    var slideIndex = 1;
+    imageSelector(slideIndex);
+
+    function plusDivs(n) {
+      imageSelector(slideIndex += n);
+    }
+
+    function imageSelector(n) {
+      var i;
+      var j = document.getElementsByClassName("square");
+      if (n > j.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = j.length}
+      for (i = 0; i < j.length; i++) {
+         j[i].style.display = "none";
+      }
+      j[slideIndex-1].style.display = "block";
+    }
+  </script>
+
+</body>

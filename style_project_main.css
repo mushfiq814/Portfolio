@@ -1,0 +1,159 @@
+.main {
+	text-align: center;
+	padding: 10px 0;
+}
+
+.text h1 {
+	font-family: 'Rubik', sans-serif;
+	font-size: 70px;
+	padding: 150px 10px 20px 10px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.text h2 {
+	font-family: 'Rubik', sans-serif;
+	font-weight: 500;
+	font-size: 30px;
+	text-transform: uppercase;
+	letter-spacing: 10px;
+	width: 90%;
+	margin: 0 auto;
+	padding-bottom: 20px;
+}
+
+.text p {
+	width: 60%;
+	margin: 0 auto;
+	padding: 20px 0;
+	text-align: justify;
+}
+
+.plink:link {
+	text-decoration: underline;
+}
+
+.skillContainer {
+	width: 60%;
+	margin: 0 auto;
+}
+
+.skill {
+	display: inline-block;
+	background-color: var(--hf-fontcolor);
+  padding: 7px 14px;
+	color: #FFF;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px;
+	flex-grow: 1;
+	border-radius: 20px;
+}
+
+.buttonContainer {
+	padding-bottom: 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	width: 60%;
+	margin: 0 auto;
+}
+
+.button {
+	background-color: var(--hf-fontcolor);
+  border: 1px solid var(--hf-fontcolor);
+	border-radius: 8px;
+  padding: 14px 31px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px;
+  cursor: pointer;
+	flex-grow: 1;
+	color: #FFF;
+}
+
+.button:hover {
+	/*opacity: 0.9;*/
+	background-color: var(--body-color);
+  border: 1px solid var(--hf-fontcolor);
+	color: var(--hf-fontcolor);
+}
+
+.buttonContainer a {
+	text-decoration: none;
+}
+
+.gallery {
+	width: 70%;
+	margin: 0 auto;
+}
+
+.square {
+	background-size: cover;
+	margin: 2%;
+	text-align: center;
+	display: block;
+	float: left;
+	position:relative;
+}
+
+.square p {
+	color: #FFF;
+	width: 60%;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+@media only screen and (max-width: 700px) {
+	.gallery {
+		width: 100%;
+  }
+
+	.square {
+		width: 100vw;
+		height: 100vw;
+		margin: 20% -2px;
+	}
+
+	.vid {
+		width: 100vw;
+		height: 100vw;
+	}
+
+	.text p {
+		text-align: left;
+		width: 90%;
+	}
+
+	.square p{
+		color: #000;
+		padding-top: 120%;
+		opacity: 1.0;
+		text-align: left;
+		width: 90%;
+	}
+}
+
+@media only screen and (min-width: 700px) {
+	.square {
+		width: 31vw;
+		height: 31vw;
+	}
+
+	.square:hover {
+		background-color: rgba(100,100,100,100);
+		background-blend-mode: multiply;
+	}
+
+	.square:hover > p {
+		opacity: 1.0;
+	}
+}

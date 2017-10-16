@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Atari Punk Console</title>
+	<link rel="shortcut icon" href="./images/logo.ico">
+	<link rel="stylesheet" type="text/css" href="style_headfoot.css">
+	<link rel="stylesheet" type="text/css" href="style_project_main.css">
+	<link rel="stylesheet" type="text/css" href="style_project3_apc.css">
+	<link href="https://fonts.googleapis.com/css?family=Bungee+Hairline|Quicksand:300,400|Rubik:900" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<nav class="nav">
+  	<div class="nav-left">
+    	<a href="index.html"><img src="./images/logo.svg" width="80" height="80"></a>
+  	</div>
+  	<div class="nav-right">
+    	<ul>
+      	<li><a href="index.html">Home</a></li>
+      	<li><a href="projects.html">Projects</a></li>
+				<li><a href="resume.html">Resum&#233</a></li>
+				<li><a href="https://medium.com/@mushfiq8194" target="_blank">Blog</a></li>
+    	</ul>
+  	</div>
+	</nav>
+
+	<div class=	"main">
+		<div class="text">
+			<h1>Atari Punk Console + 10 Step Sequencer</h1>
+			<div class="skillContainer">
+				<div class="skill">555 Timer</div>
+				<div class="skill">Astable</div>
+				<div class="skill">Monostable</div>
+				<div class="skill">Decade Counter</div>
+				<div class="skill">Sequential Logic IC</div>
+				<div class="skill">Audio</div>
+				<div class="skill">Square wave audio</div>
+			</div>
+			<p>
+				The Atari Punk Console is a tone generator and coupled with a 10 step sequencer, it can generate a sequence of notes in succession. The sound produced sounds very similar to a MIDI keyboard and this can be enhanced to be used in the music industry to create music and digital sounds. I decided to work on this project because it was both fun and practical. The potentiometers on board have differing functions. The ones on the front change the note frequency coming out of the decade counter. On the back, the one on the left changes the frequency of the 555 astable clock pulse generator for the decade counter which makes the notes play quicker. The one in the middle controls the frequency and pulse width of the overall sounds being produced and the one on the right is for volume.<br/><br/>
+
+				Click on the images to see them in a full view.<br/><br/>
+			</p>
+		</div>
+		<div class="gallery">
+			<a href="./images/Project3/Report.pdf" target="_blank"><div class="square l1">
+				<p>Final Project Report.</p></div></a>
+			<a href="./images/Project3/pic1.jpg" target="_blank"><div class="square l2">
+				<p>Onboard Potentiometers change frequencies. Front pots change individual notes. Back pots change note speed, volume and frequency ranges for all notes</p></div></a>
+			<a href="./images/Project3/pic2.jpg" target="_blank"><div class="square l3">
+				<p>Circuit that uses two 555 timers. One in astable mode, one in monostable mode.</p></div></a>
+			<a href="./images/Project3/pic3.jpg" target="_blank"><div class="square l4">
+				<p>The entire circuit. You can see that instead of two 555 timers, one 556 timer was used which basically has two 555 timers.</p></div></a>
+			<a href="./images/Project3/pic4.jpg" target="_blank"><div class="square l5">
+				<p>The two 555 timer circuits.</p></div></a>
+			<a href="./images/Project3/pic5.jpg" target="_blank"><div class="square l6">
+				<p>Breadboard design of the circuit.</p></div></a>
+		</div>
+	</div>
+
+	<div class="footer">
+		<div class="quote">
+			<script>
+				function text() {};
+				text = new text();
+				number = 0;
+
+				text[number++] = "&quot;Everything should be as simple as it is, but not simpler.&quot;<br/> - Albert Einstein"
+				text[number++] = "&quot;A good engineer does not know everything. He knows how to find it out.&quot;<br/> - Dr. J Celentano, Tunnel Engineer Guru"
+				text[number++] = "&quot;The concern for man and his destiny must always be the chief interest of all technical effort. Never forget it among your diagrams and equations.&quot; - Albert Einstein"
+				text[number++] = "&quot;The engineer performs many public functions from which he gets only philosophical satisfactions. Most people do not know it, but he is an economic and social force.&quot; - Herbert Hoover"
+				text[number++] = "&quot;I am and ever will be a white-socks, pocket-protector nerdy engineer. Born under the second law of thermodynamics, steeped in the steam tables, in love with free-body diagrams, transformed by Laplace and propelled by compressible flow.&quot; - Neil Armstrong"
+
+				increment = Math.floor(Math.random() * number);
+				document.write(text[increment]);
+			</script>
+		</div>
+
+		<div>
+			<a class="contact" href="https://twitter.com/Mushfiq814" target="_blank"><img src="./images/Contact/twitter.svg" width="40" height="40"></a>
+			<a class="contact" href="https://www.youtube.com/channel/UCIpMa1TIioqIYe2RSPTgsTA?view_as=subscriber" target="_blank"><img src="./images/Contact/youtube.svg" width="40" height="40"></a>
+			<a class="contact" href="https://medium.com/@mushfiq8194"	target="_blank"><img src="./images/Contact/medium.svg" width="40" height="40"></a>
+			<a class="contact" href="https://www.linkedin.com/in/mushfiq-mahmud/"	target="_blank"><img src="./images/Contact/linkedin.svg" width="40" height="40"></a>
+		</div>
+	</div>
+	<p style = "text-align: center; padding: 10px">Copyright &#169; 2017 Mushfiq Mahmud. All Rights Reserved</p>
+</body>
+</html>
