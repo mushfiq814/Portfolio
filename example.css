@@ -55,3 +55,40 @@ button:hover {
 
 .left {float:left;}
 .right {float:right;}
+
+
+.animation {
+  text-align: center;
+  width: 100%;
+  font-size: 30px;
+  font-family: monospace;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.firstText {
+  animation: slideLeft 9s infinite;
+  opacity: 0;
+  display: inline-block;
+}
+
+.secondText {
+  animation: slideLeft 9s 3s infinite;
+  opacity: 0;
+  display: inline-block;
+}
+
+.thirdText {
+  animation: slideLeft 9s 6s infinite;
+  opacity: 0;
+  display: inline-block;
+}
+
+@keyframes slideLeft {
+    0% {opacity:0; width:0;}
+    9% {opacity:1; width:0;}
+    10% {opacity:1; width:auto;}
+    11% {opacity:1; width:0;}
+    33% {opacity:0; width:0;}
+    100% {opacity:0; width:0;}
+}
