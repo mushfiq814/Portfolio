@@ -17,8 +17,7 @@ body {
 }
 
 .title h2 {
-	font-family: "Bungee Hairline";
-	padding: 10px 0;
+  font-family: "Bungee Hairline";
 }
 
 .wrap {
@@ -32,6 +31,12 @@ body {
 	width: 60%;
 	padding: 20px 0 300px 0;
 	margin: 0 auto;
+}
+
+.spanWord > .txt {
+  font-family: 'Rubik';
+  padding-right: 3px;
+  border-right: 2px solid #ddd;
 }
 
 @-moz-document url-prefix() {
